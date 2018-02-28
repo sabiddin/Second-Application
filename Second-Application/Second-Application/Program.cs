@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Second_Aplication.Business;
 
 namespace Second_Application
 {
@@ -10,7 +11,8 @@ namespace Second_Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World Again");
+            Business business = new Business();
+            Console.WriteLine(business.GetMessage());
             Console.Read();
         }
     }
